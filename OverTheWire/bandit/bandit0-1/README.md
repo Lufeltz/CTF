@@ -11,7 +11,8 @@
 
 
 ```
-ssh: permite que você acesse e controle um computador remoto de forma segura, como se estivesse interagindo diretamente com a máquina.
+ssh: permite que você acesse e controle um computador remoto de forma segura, como se estivesse interagindo
+diretamente com a máquina.
 
 -p: determina em qual porta a conexão com o servidor será realizada.
 ```
@@ -21,7 +22,8 @@ ls: lista o conteúdo do diretório atual
 ```
 
 ```
-cat: mostra o conteúdo de um ou mais arquivos de texto. A principal função do comando cat é concatenar (ou seja, combinar) arquivos e exibir o resultado na saída padrão (geralmente a tela).
+cat: mostra o conteúdo de um ou mais arquivos de texto. A principal função do comando cat é concatenar,
+ou seja, combinar arquivos e exibir o resultado na saída padrão (geralmente a tela).
 ```
 
 <h3>Resolução</h3>
