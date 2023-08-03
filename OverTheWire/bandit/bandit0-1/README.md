@@ -6,19 +6,27 @@
 <h3>Introdução</h3>
 <p>O objetivo desse level é logar no jogo através do servidor bandit.labs.overthewire.org usando uma conexão SSH na porta 2220 com o usuário <strong>bandit0</strong>. Após realizado o login é necessário verificar o <a href="https://overthewire.org/wargames/bandit/bandit1.html">level 0-1</a> para maiores instruções de como passar para o pŕoximo level. O password também é informado sendo <strong>bandit0</strong>.</p>
 
-<ul>
-    <li>Comandos utilizados:
-        <ul>
-            <li><strong>ssh:</strong> permite que você acesse e controle um computador remoto de forma segura, como se estivesse interagindo diretamente com a máquina.</li>
-            <li><strong>-p:</strong> determina em qual porta a conexão com o servidor será realizada.</li>
-            <li><strong>ls:</strong> lista o conteúdo do diretório atual</li>
-            <li><strong>cat:</strong> mostra o conteúdo de um ou mais arquivos de texto. A principal função do comando cat é concatenar (ou seja, combinar) arquivos e exibir o resultado na saída padrão (geralmente a tela).</li>
-        </ul>
-    </li>
-</ul>
+
+<h3>Comandos utilizados:</h3>
 
 
-```bash
+```
+ssh: permite que você acesse e controle um computador remoto de forma segura, como se estivesse interagindo diretamente com a máquina.
+
+-p: determina em qual porta a conexão com o servidor será realizada.
+```
+
+```
+ls: lista o conteúdo do diretório atual
+```
+
+```
+cat: mostra o conteúdo de um ou mais arquivos de texto. A principal função do comando cat é concatenar (ou seja, combinar) arquivos e exibir o resultado na saída padrão (geralmente a tela).
+```
+
+<h3>Resolução</h3>
+
+```
 ┌──(lufeltz㉿lufeltz)-[~]
 └─$ ssh bandit0@bandit.labs.overthewire.org -p 2220
 ```
@@ -37,13 +45,13 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added '[bandit.labs.overthewire.org]:2220' (ED25519) to the list of known hosts.
 ```
 
-<p>Logo após essa adição insiro o password bandit0 fornecido no desafio e a autenticação com o usuário bandit0 é realizada.</p>
+<p>Logo após essa adição insiro o password bandit0 fornecido no desafio e a autenticação com o usuário bandit0 é realizada(note que não será possível ver o password devido a uma medida de segurança).</p>
 
 ```
 bandit0@bandit.labs.overthewire.org's password: bandit0
 ```
 
-```bash
+```
 bandit0@bandit:~$ whoami
 bandit0
 ```
@@ -52,10 +60,17 @@ bandit0
 
 <p>Usando o comando <strong>ls</strong> vejo que o arquivo mencionado está no diretório atual e ao utilizar o <strong>cat</strong> visualizo o password que será utilizado para fazer login no usuário <strong>bandit1</strong>.</p>
 
-```bash
+```
 bandit0@bandit:~$ ls
 readme
 bandit0@bandit:~$ cat readme
 NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 ```
 
+<p>Por fim saio do usuário atual por meio do comando exit</p>
+
+```
+bandit0@bandit:~$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.
+```
