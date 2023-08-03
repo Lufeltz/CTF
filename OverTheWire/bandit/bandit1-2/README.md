@@ -89,6 +89,7 @@ rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
 bandit1@bandit:~$ pwd
 /home/bandit1
 bandit1@bandit:~$ cat /home/bandit1/-
+rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
 ```
 
 <p>Com o password obtido posso utilizá-lo para me autenticar no próximo desafio.</p>
