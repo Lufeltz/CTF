@@ -1,4 +1,4 @@
-<h1><a href="https://overthewire.org/wargames/bandit/bandit3.html">Bandit Level 1-2</a></h1>
+<h1><a href="https://overthewire.org/wargames/bandit/bandit3.html">Bandit Level 2-3</a></h1>
 
 <h3>Descrição original</h3>
 <p>The password for the next level is stored in a file called spaces in this filename located in the home directory</p>
