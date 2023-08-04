@@ -77,7 +77,7 @@ Dessa forma obtenho o password para o próximo level:
 
 Por fim saio do usuário atual por meio do comando **exit.**
 
-```
+```console
 bandit3@bandit:~$ exit
 logout
 Connection to bandit.labs.overthewire.org closed.

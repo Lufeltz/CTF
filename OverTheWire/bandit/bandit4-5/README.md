@@ -107,7 +107,7 @@ lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
 
 Por fim saio do usuário atual por meio do comando **exit.**
 
-```
+```console
 bandit4@bandit:~$ exit
 logout
 Connection to bandit.labs.overthewire.org closed.
