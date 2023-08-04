@@ -1,13 +1,13 @@
-<h1><a href="https://overthewire.org/wargames/bandit/bandit2.html">Bandit Level 1-2</a></h1>
+# [Bandit Level 1-2](https://overthewire.org/wargames/bandit/bandit2.html)
 
-<h3>Descrição original</h3>
-<p>The password for the next level is stored in a file called - located in the home directory</p>
+### Descrição original
+The password for the next level is stored in a file called - located in the home directory
 
-<h3>Introdução</h3>
-<p>O objetivo desse level é abrir um arquivo no diretório home que tem como nome -, ou seja, um hífen</p>
+### Introdução
+O objetivo desse level é abrir um arquivo no diretório home que tem como nome -, ou seja, um hífen
 
 
-<h3>Comandos utilizados:</h3>
+### Comandos utilizados:
 
 ```
 ssh: permite que você acesse e controle um computador remoto de forma segura, como se estivesse interagindo
@@ -29,80 +29,80 @@ ou seja, combinar arquivos e exibir o resultado na saída padrão (geralmente a 
 pwd: exibe o diretório atual em que o usuário se encontra. 
 ```
 
-<h3>Resolução</h3>
+### Resolução
 
-```bash
+```
 ┌──(lufeltz㉿lufeltz)-[~]
 └─$ ssh bandit1@bandit.labs.overthewire.org -p 2220
 ```
 
-<p>Logo após iniciar essa conexão com o ssh informo o password obtido no desafio anterior.</p>
+Logo após iniciar essa conexão com o ssh informo o password obtido no desafio anterior.
 
 ```
 bandit1@bandit.labs.overthewire.org's password: NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 ```
 
-```
+```console
 bandit1@bandit:~$ whoami
 bandit1
 ```
 
-<p>Realizado o login vejo quais arquivos estão no meu diretório atual.</p>
+Realizado o login vejo quais arquivos estão no meu diretório atual.
 
-```
+```console
 bandit1@bandit:~$ ls
 -
 ```
 
-<p>Somente o arquivo chamado - se encontra no diretório atual, porém caso eu tenho usar cat - o prompt ficará aguardando que eu digite, isso ocorre devido ao prompt nesse caso interpretar o nome do arquivo - como uma opção do próprio comando cat, em vez de um nome de arquivo válido.</p>
+Somente o arquivo chamado - se encontra no diretório atual, porém caso eu tenho usar **cat -** o prompt ficará aguardando que eu digite, isso ocorre devido ao prompt nesse caso interpretar o nome do arquivo - como uma opção do próprio comando **cat**, em vez de um nome de arquivo válido.
 
-```
+```console
 bandit1@bandit:~$ cat -
 _
 ```
 
-<p>Para contornar isso algumas opções são:</p>
+Para contornar isso algumas opções são:
 
-<p>Redirecionar o arquivo - para o comando cat usando o operador <</p>
+Redirecionar o arquivo - para o comando cat usando o operador **<**
 
-```
+```console
 bandit1@bandit:~$ cat < -
 rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
 ```
 
-<p>Ou também utilizando os caminhos relativo e absoluto.</p>
+Ou também utilizando os caminhos relativo e absoluto.
 
-<p>Caminho relativo(o caractere . indica o diretório atual):</p>
+Caminho relativo(o caractere . indica o diretório atual):
 
-```
+```console
 bandit1@bandit:~$ cat ./-
 rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
 ```
 
-<p>Caminho absoluto:</p>
+Caminho absoluto:
 
-```
+```console
 bandit1@bandit:~$ cat /home/bandit1/-
 rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
 ```
-<p>Dica: o caminho atual pode ser obtido com o comando <strong>pwd</strong>.</p>
+Dica: o caminho atual pode ser obtido com o comando **pwd**.
 
-```
+```console
 bandit1@bandit:~$ pwd
 /home/bandit1
 bandit1@bandit:~$ cat /home/bandit1/-
 rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
 ```
 
-<p>Com o password obtido posso utilizá-lo para me autenticar no próximo desafio.</p>
+Com o password obtido posso utilizá-lo para me autenticar no próximo desafio.
 
 ```
 rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
 ```
 
-<p>Por fim saio do usuário atual por meio do comando exit</p>
+Por fim saio do usuário atual por meio do comando **exit.**
 
-```
+```console
 bandit1@bandit:~$ exit
 logout
 Connection to bandit.labs.overthewire.org closed.
