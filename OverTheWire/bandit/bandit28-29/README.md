@@ -63,7 +63,7 @@ bandit28
 
 Realizado o login faço o clone desse repositório para o diretório **/tmp/git-bandit28**(caso ele não exista o git faz a criação automaticamente e clonará o repositório dentro dele).
 
-Note que depois de localhost eu fiz a definicação da porta para **:2220** e após a conexão defino o diretório **/tmp/git-bandit28** onde o clone do repositório será feito.
+Note que depois de localhost eu fiz a definição da porta para **:2220** e após a conexão defino o diretório **/tmp/git-bandit28** onde o clone do repositório será feito.
 
 ```console
 bandit28@bandit:~$ git clone ssh://bandit28-git@localhost:2220/home/bandit28-git/repo /tmp/git-bandit28
