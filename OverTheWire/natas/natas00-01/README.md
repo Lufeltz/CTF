@@ -2,7 +2,7 @@
 
 
 ### Objetivo
-O objetivo desse level é encontrar dentro da página web o password para o próximo level **natas1**, porém sem o uso do click com o botão direito já que isso está bloqueado.
+O objetivo desse level é encontrar dentro da página web o password para o próximo level **natas2**, porém sem o uso do click com o botão direito já que isso está bloqueado.
 
 
 ### Credenciais para autenticação no desafio
