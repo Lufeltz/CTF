@@ -20,21 +20,21 @@ URL: http://natas0.natas.labs.overthewire.org
 Começo esse desafio abrindo a URL informada nas instruções e me autenticando com o usuário e senha **natas0:**
 
 
-<img src="./imgs/1.png" width=75% alt="login">
+<img src="./imgs/1.png" alt="login">
 
 <br>
 
 Após me autenticar recebo uma mensagem indicando que posso encontrar o password para o próximo level nessa página:
 
 
-<img src="./imgs/2.png" width=75% alt="descrição">
+<img src="./imgs/2.png" alt="descrição">
 
 <br>
 
 Já que é comum ter algo comentado no código fonte da página, abro ele com **Ctrl + U** e localizo facilmente o password para o próximo level **natas 1.**
 
 
-<img src="./imgs/3.png" width=75% alt="código fonte">
+<img src="./imgs/3.png" alt="código fonte">
 
 <br>
 

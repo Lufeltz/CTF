@@ -18,19 +18,19 @@ URL: http://natas3.natas.labs.overthewire.org
 
 Começo esse desafio abrindo a URL informada nas instruções e me autenticando no usuário **natas3**:
 
-<img src="./imgs/1.png" width=75% alt="login">
+<img src="./imgs/1.png" alt="login">
 
 <br>
 
 Após me autenticar recebo uma mensagem indicando que não existe nada naquela página, parece ser uma dica de que vou precisar encontrar um outro diretório onde provavelmente está o password do usuário **natas4**, igual ao desafio anterior. 
 
-<img src="./imgs/2.png" width=75% alt="descrição">
+<img src="./imgs/2.png" alt="descrição">
 
 <br>
 
 Abro o código fonte da página(**Ctrl + U**) e procuro por alguma informação relevante assim como no level anterior, porém dessa vez encontro apenas uma mensagem me informando que não existem mais vazamentos de informações e ainda sou informado que nem mesmo o google vai encontrar o arquivo dessa vez:
 
-<img src="./imgs/3.png" width=75% alt="código fonte">
+<img src="./imgs/3.png" alt="código fonte">
 
 <br>
 
@@ -63,19 +63,19 @@ Cada parte do conteúdo significa:
 
 Sabendo disso acesso o arquivo **/robots.txt** e vejo que existe um arquivo chamado **s3cr3t** que o Google não vai conseguir encontrar(indexar):
 
-<img src="./imgs/4.png" width=75% alt="arquivo robots.txt">
+<img src="./imgs/4.png" alt="arquivo robots.txt">
 
 <br>
 
 Altero o caminho da URL para **/s3cr3t** e me deparo com o arquivo **users.txt**:
 
-<img src="./imgs/5.png" width=75% alt="diretório /s3cr3t">
+<img src="./imgs/5.png" alt="diretório /s3cr3t">
 
 <br>
 
 Clico nesse arquivo e as credenciais do usuário **natas4**:
 
-<img src="./imgs/6.png" width=75% alt="credenciais users.txt">
+<img src="./imgs/6.png" alt="credenciais users.txt">
 
 
 <br>
