@@ -30,7 +30,7 @@ Após me autenticar recebo uma mensagem indicando que posso encontrar o password
 
 Tentando clicar com o botão direito uma outra mensagem me confirma esse bloqueio:
 
-<img src="./imgs/3.png" width=75% alt="código fonte">
+<img src="./imgs/3.png" width=75% alt="mensagem de bloqueio">
 
 <br>
 
