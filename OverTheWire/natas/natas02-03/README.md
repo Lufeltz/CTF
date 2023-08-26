@@ -30,14 +30,15 @@ Após me autenticar recebo uma mensagem indicando que não existe nada naquela p
 
 Abro o código fonte da página(**Ctrl + U**) e procuro por alguma informação relevante assim como no level anterior, porém dessa vez encontro apenas uma mensagem me informando que não existem mais vazamentos de informações e ainda sou informado que nem mesmo o google vai encontrar o arquivo dessa vez:
 
-<img src="./imgs/3.png" width=75% alt="descrição">
+<img src="./imgs/3.png" width=75% alt="código fonte">
 
 <br>
 
 Espera aí! Nem mesmo o Google? Uma forma de evitar que tanto o Google quanto outros mecanismos de busca encontrem um arquivo específico é bloquear a indexação, o que é feito através de um arquivo chamado **robots.txt**.
 
-
-    Um indexador, também conhecido como robô de mecanismo de busca, é um programa automatizado que percorre a internet e examina o conteúdo de sites da web para coletar informações. Essas informações são posteriormente usadas para indexar ou catalogar o conteúdo dos sites em um mecanismo de busca, como o Google, Bing ou outros.
+```
+Um indexador, também conhecido como robô de mecanismo de busca, é um programa automatizado que percorre a internet e examina o conteúdo de sites da web para coletar informações. Essas informações são posteriormente usadas para indexar ou catalogar o conteúdo dos sites em um mecanismo de busca, como o Google, Bing ou outros.
+```
 
 O proprietário de um site usa o arquivo **/robots.txt** para dar instruções aos robôs da web, isso é conhecido como The Robots Exclusion Protocol(Protocolo de Exclusão de Robôs).
 
@@ -62,19 +63,19 @@ Cada parte do conteúdo significa:
 
 Sabendo disso acesso o arquivo **/robots.txt** e vejo que existe um arquivo chamado **s3cr3t** que o Google não vai conseguir encontrar(indexar):
 
-<img src="./imgs/4.png" width=75% alt="código fonte">
+<img src="./imgs/4.png" width=75% alt="arquivo robots.txt">
 
 <br>
 
 Altero o caminho da URL para **/s3cr3t** e me deparo com o arquivo **users.txt**:
 
-<img src="./imgs/5.png" width=75% alt="código fonte">
+<img src="./imgs/5.png" width=75% alt="diretório /s3cr3t">
 
 <br>
 
 Clico nesse arquivo e as credenciais do usuário **natas4**:
 
-<img src="./imgs/6.png" width=75% alt="código fonte">
+<img src="./imgs/6.png" width=75% alt="credenciais users.txt">
 
 
 <br>
